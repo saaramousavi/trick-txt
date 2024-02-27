@@ -1,6 +1,7 @@
-# trick-txt
+**Animate text**
 
-[Demo Project](https://saaramousavi.github.io/trick-txt/)
+
+[Demo Project](https://saaramousavi.github.io/trick-txt/
 
 - Developed by Sara Mousavi
 
