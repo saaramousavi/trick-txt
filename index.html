@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+    body{
+        background-color: black;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        gap:30px;
+        left: -40px;
+        top:  170px;
+        padding: 25px;
+
+    }
+    section{
+        background:linear-gradient(#c9ecfc, #085868);
+        height: 150px;
+        width: 110px;
+    }
+    section:nth-child(1){
+        clip-path: polygon(0 0,
+		0 0,
+		0 0,
+		100% 0,
+		100% 0,
+		100% 0,
+		100% 100%,
+		100% 100%,
+		100% 100%,
+		0 100%,
+		0 100%,
+		0 100%,
+		0 0
+	);
+	animation: h 0.5s ease forwards 1s;
+}
+@keyframes h {
+	100% {
+		clip-path: polygon(
+			0 0,
+			20% 0,
+			20% 40%,
+			80% 40%,
+			80% 0,
+			100% 0,
+			100% 100%,
+			80% 100%,
+			80% 50%,
+			20% 50%,
+			20% 100%,
+			0 100%,
+			0 0
+		);
+	}
+}
+
+
+section:nth-child(2) {
+	clip-path: polygon(
+		0 0,
+		100% 0,
+		100% 0,
+		100% 0,
+		100% 50%,
+		100% 50%,
+		100% 50%,
+		100% 50%,
+		100% 100%,
+		100% 100%,
+		100% 100%,
+		0 100%,
+		0 0
+	);
+    animation: e 0.5s ease forwards 1.5s;
+    }
+    @keyframes  e {
+        100% { clip-path: polygon(
+			0 0,
+			90% 0,
+			90% 10%,
+			20% 7%,
+			20% 40%,
+			80% 40%,
+			75% 50%,
+			20% 50%,
+			20% 93%,
+			95% 90%,
+			100% 100%,
+			0 100%,
+			0 0
+		);}}
+   
+
+        section:nth-child(3){
+            clip-path: polygon(
+             0 0,
+             100% 0,
+             100% 50%,
+             100% 80%,
+             100% 100%و
+              0 100%
+                 );
+            animation: ll 0.5s ease forwards 2s;
+        }
+        @keyframes ll{
+            100%{ clip-path: polygon(0 0, 20% 0, 20% 93%, 95% 90%, 100% 100% , 0 100%);}
+        }
+
+
+
+
+        section:nth-child(4){
+            clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 80%, 100% 100% , 0 100%);
+            animation: llw 0.5s ease forwards 2s;
+
+
+        }
+        @keyframes llw{
+            100%{ clip-path: polygon(0 0, 20% 0, 20% 93%, 95% 90%, 100% 100% , 0 100%);
+              }
+        }
+
+
+section:nth-child(5){
+	clip-path:inset (0 0 0 round 0 0);
+	animation: o 0.5s ease forwards 3s;
+    display: flex;
+	text-align: center;
+    justify-content:center;
+    align-items: center;
+	width: 120px;
+	
+}
+
+@keyframes o{
+	100% {
+		clip-path: inset(0 0 0 0 round 50% 50%);
+    
+	}
+}
+
+
+.text {
+	width: 65%;
+	height: 90%;
+	background: #050505;
+	border-radius: 50%;
+	scale: 0;
+    left: 80px;
+    
+	animation: cutout 0.5s ease forwards 3s;
+}
+@keyframes cutout {
+	100% {
+		scale: 1;
+	}
+}
+
+</style>
+<body>
+ <main>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section>
+        <div class="text"></div>
+    </section>
+
+ </main>
+</body>
+</html>
